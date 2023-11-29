@@ -19,7 +19,7 @@ function Game() {
   };
     const check=()=>{
         if(box[0][0]!=null&&box[0][0]===box[0][1]&&box[0][1]===box[0][2])
-        {setwin(box[0][0]);}
+        {setwin(box[0][0] );}
         if(box[1][0]!=null&&box[1][0]===box[1][1]&&box[1][1]===box[1][2])
         {setwin(box[1][0]);}
         if(box[2][0]!=null&&box[2][0]===box[2][1]&&box[2][1]===box[2][2])
@@ -51,7 +51,7 @@ function Game() {
   return (
     <div className="body">
         <div className="title aligncentre">tic tac toe</div>
-            <div className="aligncentre ch">{win? `${win} wins`:`Let ${ch} play`}</div>
+            <div className="aligncentre ch">{win ? (win === "tie" ? "The game ended in a draw" : `${win} wins`) : `Let ${ch} play`}</div>
         <div className="aligncenter board">
             {
                 box.map((row,ri) =>(
