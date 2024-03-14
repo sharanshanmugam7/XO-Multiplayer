@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+@font-face {
+    font-family: 'Dragon Hunter';
+    src: url('./fonts/DEBUG.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+.body {
+  color: white;
+  background-color: black;
+  height: 100vh;
+  background-image: url('./bg.gif');
+  background-repeat: repeat;
+}
+.aligncentre {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+.sha {
+  position: absolute;
+  top: 3;
+  left: 0;
+  color: #66FCF1;
+  cursor: pointer;
+  animation: slideRight 0.5s ease forwards;
+  animation-duration: 2s;
+}
+.port {
+  position: absolute;
+  top: 3;
+  right: 0;
+  color: #66FCF1;
+  cursor: pointer;
+  font-size: 15px;
+  letter-spacing: 0px;
+  animation: slideLeft 0.5s ease forwards;
+  animation-duration: 2s;
+}
+.title {
+  font-size: 38px;
+  word-spacing: 10px;
+  letter-spacing: 5px;
+  height: 11vh;
+  background-color: black;
+  border-bottom: 1px solid white;
+  font-family: 'Press Start 2P';
+}
+.board {
+  height: 70vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; 
+}
+
+.row {
+  display: flex;
+}
+
+.tile {
+  width: 50px;
+  height:50px;
+  border: 1px solid white;
+  user-select: none;
+  font-size: 4rem;
+  padding:33px;
+  text-align: center;
+  font-family: 'Dragon Hunter', Courier, monospace;
+  cursor: pointer;
+}
+.xc{
+    background-color: rgba(255, 255, 255, 0.087);
+}
+.b{
+    height: 38px;
+    margin-left: 680px;
+    width: 200px;
+    background-color: red;
+    color: white;
+    font-size: 30px;
+    font-family: 'Dragon Hunter', Courier, monospace;
+    border: 1px;
+    border-radius: 8px;
+
+}
+.b:hover{
+  background-color: black;
+  color: red;
+}
+
+.ch{
+    margin-top: 10px;
+    font-family: 'Dragon Hunter', Courier, monospace;
+    font-size: 40px;
+    margin-bottom: -30px;
+    font-weight: 500;
+}
+@keyframes slideRight{
+  0%{
+      transform: translateX(-100px);
+      opacity: 0;
+  }
+  100%{
+      transform: translateX(0);
+      opacity: 1;
+  }
+}
+@keyframes slideLeft{
+  0%{
+      transform: translateX(100px);
+      opacity: 0;
+  }
+  100%{
+      transform: translateX(0);
+      opacity: 1;
+  }
+}
