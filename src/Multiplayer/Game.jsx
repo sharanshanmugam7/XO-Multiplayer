@@ -51,8 +51,6 @@ function Game() {
   return (
     <div className="body">
         <div className="title aligncentre"><span className="sha"><a href="https://www.linkedin.com/in/link-sharan-s/" target="_blank" rel="noopener noreferrer"  style={{ color: '#66FCF1' }}>.Sha</a></span>tic tac toe<span className="port"><a href="https://www.linkedin.com/in/link-sharan-s/" target="_blank" rel="noopener noreferrer"  style={{ color: '#66FCF1', textDecoration: 'none'}}>View Portfolio</a></span></div>
-=======
-        <div className="title aligncentre">tic tac toe</div>
             <div className="aligncentre ch">{win ? (win === "tie" ? "The game ended in a draw" : `${win} wins`) : `Let ${ch} play`}</div>
         <div className="aligncenter board">
             {
